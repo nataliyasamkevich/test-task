@@ -1,1 +1,177 @@
-/* Смотри сколько снизу свободного места! Оно идеально подойдёт, чтобы писать твои стили! */
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #2F2F2F;
+    margin: 0;
+    background: #F6F6F6;
+}
+
+.products__wrapper {
+    max-width: 1180px;
+    margin: auto;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 4.8rem;
+    line-height: 7.2rem;
+    text-align: center;
+    color: #000000;
+}
+
+.products__title {
+    margin: 40px 0;
+}
+
+.layout-3-column {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.layout-3-column>* {
+    flex-basis: 30%;
+}
+
+.products__column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.products__wrap>* {
+    margin-bottom: 20px;
+}
+
+.block-shadowed {
+    background: #FFFFFF;
+    border-radius: 12px;
+    margin-bottom: 60px;
+}
+
+.products__image {
+    height: 213.75px;
+    width: 380px;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.products__content {
+    padding: 24px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 220px;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: #2F2F2F;
+}
+
+.products__name {
+    margin: 0 0 16px;
+}
+
+.products__description {
+    flex-grow: 1;
+    margin: 0 0 24px;
+}
+
+.button {
+    padding: 10px 0;
+    font-weight: 900;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: #42940F;
+    background: #FFFFFF;
+}
+
+.button_bordered {
+    border: 2px solid #42940F;
+    border-radius: 8px;
+}
+
+.button_bordered:hover {
+    background: #42940F;
+    color: #FFFFFF;
+}
+
+.button_bordered:active {
+    background: #1F5200;
+    border: 2px solid #1F5200;
+    color: #FFFFFF;
+}
+
+.button_colored {
+    background: #4E4E4E;
+    border: 1px solid #4E4E4E;
+    border-radius: 8px;
+    color: #FFFFFF;
+}
+
+.tags {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+}
+
+.tags__name {
+    padding: 3px 16px;
+    background: #FDCFF3;
+    border-radius: 8px;
+    margin-right: 16.3px;
+}
+
+.tags_colored {
+    background: #FFCF56;
+}
+
+@media (max-width: 1180px) {
+    .products__wrapper {
+        padding: 0 20px;
+    }
+
+    .layout-3-column {
+        justify-content: space-around;
+    }
+
+    .products__wrap>* {
+        margin: 15px 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 3.2rem;
+        line-height: 4.8rem;
+    }
+
+    .products__title {
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 390px) {
+
+    html {
+        font-size: 9px;
+    }
+
+    .products__title {
+        margin: 20px 0;
+    }
+
+    .products__image {
+        max-width: 300px;
+    }
+}
